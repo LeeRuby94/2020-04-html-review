@@ -5,8 +5,8 @@
     4. Javascript 심도있게
     5. jQuery 리뷰
 
-    # jQuery 리뷰
-    ## 모든 jQuery 는 함수(메서드)로 만들어져 있다.
+# jQuery 리뷰
+## 모든 jQuery 는 함수(메서드)로 만들어져 있다.
 ```js
 $(".wrap").hide();
 
