@@ -18,9 +18,9 @@ $(".a").attr("id").hide();
 
 //함수,즉 펑션과 메서드의 차이?
 ```
-        0. Selector(선택자)
+0. Selector(선택자)
         
-        1. Animation
+1. Animation
 ```js
 hide()
 show()
@@ -34,15 +34,15 @@ slideToggle()
 animate()
 앞에 꼭 jQurey개체가 있어야 함
 ```
-        2. DOM(Document Object Model)
+2. DOM(Document Object Model)
 
-        3. Attribute(html속성들)
+3. Attribute(html속성들)
 
-        4. CSS를 조작할 수 있음
+4. CSS를 조작할 수 있음
 
-        5. Dimension (단위)
+5. Dimension (단위)
 
-        6. Event
+6. Event
 
-        7. getter/setter
-         - html(), text(), css(), attr(), ...
+7. getter/setter
+  - html(), text(), css(), attr(), ...
