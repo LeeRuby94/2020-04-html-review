@@ -60,8 +60,24 @@ $('.a').appned('<div>A</div>').click    // return $('.a')
 $('<div>A</div>').appnedTo('.a').click // return $('<div>A</div>' 즉,위와 리턴하는 값이 다르다
 ```
 
-3. Attribute(html속성들)
+3. Attribute(html속성들), dataSet
+  - Getter(가져오는): attr('속성')
+  - Setter(세팅해주는): attr('속성', '값')
+  - Getter: data('key키');
+  - Setter: data('key키', 'value값');
+  <!-- 자주봐야하는 사이트 3가지 1.w3cschools.com 2.developer.mozilla.org/ko/docs/Web/javaScript(모질라 자바스크립트) 3.api.jquery.com  그 외 stackoverflow-->
+```html
+<div class="a" id="A"></div>
+```
 
+```js
+$(".a").attr("id"); // 문자열 "A"를 리턴해줌
+$(".a").attr("id", "B"); // id="B'가되고, jQuery를 리턴해줌
+$(".a").attr({
+  id: "C"
+  style: "background-color: #ccc"
+});
+```
 4. CSS를 조작할 수 있음
 
 5. Dimension (단위)
