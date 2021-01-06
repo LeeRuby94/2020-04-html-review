@@ -17,22 +17,29 @@ function onAppend(){
 	$listWrap.append(tag);
 	$(tag).appendTo($listWrap);
 }
+
 function onPrepend(){
 	$listWrap.prepend(tag);
 	$(tag).prependTo($listWrap);
 }
+
 function onEmpty(){
-
+	$listWrap.empty(); //리스트랩 안에 있는 내용을 지움 
 }
+
 function onRemove(){
-
+	$listWrap.remove(); //리스트랩이 지워짐
 }
+
 function onHtml(){
-
+	$listWrap.html('<h1>Hello</h1>');
 }
+
 function onText(){
-
+	$listWrap.text('<h1>Hello</h1>')
 }
-function onReset(){
 
+function onReset(){
+	$('.container').html('<div class="list-wrap text-center"><div>====== 기준 ======</div></div>');
+	$listWrap = $(".list-wrap"); //이거 초기화 해준 거임
 }
