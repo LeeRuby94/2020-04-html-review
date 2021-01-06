@@ -24,7 +24,8 @@ $(".a").attr("id").hide();
 $("#sample")
 document.getElementById("sample")
 ```
-0. Selector(선택자)
+0. Selector(선택자) - 리턴 값 제이쿼리
+  - find() children() eq() siblings() parent() parents() next() prev() 
 ```js
 // 태그나 객체를 $()로 감싸 실행하면 jQuery객체가 리턴된다.
 $(".a")
@@ -32,11 +33,13 @@ $("div")
 $(".a > div")
 $(document.getElementById('sample'))
 $('<div>A</div>')
+$('div, '.wrap') => .wrap 안의 div $('.wrap).find('div')와 같다
+$('div, .wrap') => div와 .wrap 같이 선택
 
 // $()[0] => 자바스크립트가 된다
 $("#sample")[0] // 자바스크립트
 ```
-1. Animation
+1. Animation - jQuery return ( 리턴 값 제이쿼리)
 ```js
 hide(300, function(){}) // 이 때 이 함수가 콜백임. 펑션괄호대괄호가!
 show()
@@ -50,7 +53,12 @@ slideToggle()
 animate()
 앞에 꼭 jQurey개체가 있어야 함
 ```
-2. DOM(Document Object Model)
+2. DOM(Document Object Model) : reutrn jQuery
+- append() appendTo() prependTo() remeve() empty() html() text()
+```js
+$('.a').appned('<div>A</div>').click    // return $('.a')
+$('<div>A</div>').appnedTo('.a').click // return $('<div>A</div>' 즉,위와 리턴하는 값이 다르다
+```
 
 3. Attribute(html속성들)
 
