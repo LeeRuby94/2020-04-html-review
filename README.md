@@ -24,7 +24,8 @@ $(".a").attr("id").hide();
 $("#sample")
 document.getElementById("sample")
 ```
-0. Selector(선택자) - 리턴 값 제이쿼리
+### 0. Selector(선택자) - 리턴 값 제이쿼리
+  [Selector의 모든것](https://www.w3schools.com/jquery/jquery_ref_selectors.asp)
   - find() children() eq() siblings() parent() parents() next() prev() 
 ```js
 // 태그나 객체를 $()로 감싸 실행하면 jQuery객체가 리턴된다.
@@ -39,7 +40,8 @@ $('div, .wrap') => div와 .wrap 같이 선택
 // $()[0] => 자바스크립트가 된다
 $("#sample")[0] // 자바스크립트
 ```
-1. Animation - jQuery return ( 리턴 값 제이쿼리)
+### 1. Animation - jQuery return ( 리턴 값 제이쿼리)
+  [애니메이션의 모든것](https://www.w3schools.com/jquery/jquery_ref_effects.asp)
 ```js
 hide(300, function(){}) // 이 때 이 함수가 콜백임. 펑션괄호대괄호가!
 show()
@@ -53,14 +55,16 @@ slideToggle()
 animate()
 앞에 꼭 jQurey개체가 있어야 함
 ```
-2. DOM(Document Object Model) : reutrn jQuery
+### 2. DOM(Document Object Model) : reutrn jQuery
+  [DOM의 모든것](https://www.w3schools.com/jquery/jquery_ref_html.asp)
 - append() appendTo() prependTo() remeve() empty() html() text()
 ```js
 $('.a').appned('<div>A</div>').click    // return $('.a')
 $('<div>A</div>').appnedTo('.a').click // return $('<div>A</div>' 즉,위와 리턴하는 값이 다르다
 ```
 
-3. Attribute(html속성들), dataSet
+### 3. Attribute(html속성들), dataSet
+  위의 dom의 모든것 주소에 들어가면 볼 수 있음.
   - Getter(가져오는): attr('속성')
   - Setter(세팅해주는): attr('속성', '값')
   - Getter: data('key키');
@@ -78,11 +82,40 @@ $(".a").attr({
   style: "background-color: #ccc"
 });
 ```
-4. CSS를 조작할 수 있음
+### 4. CSS를 조작할 수 있음
+  - Getter : css('속성')
+  - Setter : css('속성', '값')
+  - Setter : css({ '속성', '값', ... })
+  - addClass('클래스명') removeClass('클래스명') toggleClass('클래스명')
+  - hasClass('클래스명')
 
-5. Dimension (단위)
+### 5. Dimension (단위)
+  [크기의 모든 것](https://www.w3schools.com/jquery/jquery_dimensions.asp)
+  - width() height() 
+  - innerWidth() innerHeight() 
+  - outerWidth() outerHeight()
+  - outerWidth(true) outerHeight(true)
+  - offset() => return {top: 200, left:100} 즉,객체를 리턴해줌
+  - offset().top / offset().left
+  - position().top / position().left
+  - scrollTop()
 
-6. Event
+### 6. Event
+  -[이벤트의 모든것](https://www.w3schools.com/jquery/jquery_ref_events.asp)
+  - click(), hover(), mouseover(), mouseleave(), mouseenter(), keyup(), keydown(),
+  resize(), scroll() ...
 
-7. getter/setter
+###7. getter/setter
   - html(), text(), css(), attr(), ...
+
+# Javascript Review
+## 프로그래밍은 변수와 함수의 집합이다.
+
+### 변수
+1. Primmitive(원시) Type
+  - String, Number, Boolean, undefined
+2. Reference(참조) Type
+  - Array, Object, Null
+```js
+
+```
